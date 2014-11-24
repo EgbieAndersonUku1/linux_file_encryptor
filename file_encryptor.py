@@ -60,7 +60,7 @@ class Encryptor(object):
             else: 
                 print("The answer must either (y or n) ")
 
-    def translate(self, mode, filename, new_filename, shred):
+    def _translate(self, mode, filename, new_filename, shred):
         '''translate(str, str, str, str) -> return(str)
         A wrapper function that gives additonal help to the encrypt and decrypt method
         '''
@@ -70,11 +70,11 @@ class Encryptor(object):
 
     def encrypt(self, mode, filename, new_filename, shred_file):
         """Encrypts a file"""
-        self.translate(mode, filename, new_filename, shred_file)
+        self._translate(mode, filename, new_filename, shred_file)
 
     def decrypt(self, mode, filename, new_filename, shred_file):
         """Decrypts a file"""
-        self.translate(mode, filename, new_filename, shred_file)
+        self._translate(mode, filename, new_filename, shred_file)
  
 # the main program
 def main():
