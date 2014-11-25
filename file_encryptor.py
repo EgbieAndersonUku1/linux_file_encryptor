@@ -12,6 +12,7 @@
 # the modules that will be imported into the program
 import optparse
 import platform
+import webbroswer
 import re
 import os
 import sys
@@ -98,11 +99,17 @@ def main():
     else:
         if file_mode == "encrypt":
             encrypter.encrypt(encryption, curr_file, new_file, shred_no)
-            print("\n[+] The file has be encrypted and stored in your cwd directory \n")
+            print("\n[+] The file has be encrypted please wait opening encrypted file.. \n")
+            sleep(1)
+            webbrowser.open(new_file)
+            print "[+] Done"
      
         elif file_mode == "decrypt":
             encrypter.decrypt(decryption, curr_file, new_file, shred_no)
-            print("\n[+] The file has be decrypted and stored in your cwd directory\n")
+            print("\n[+] The file has be decrypted please wait opening decrypted file..\n")
+            sleep(1)
+            webbrowser.open(new_file)
+            print "[+] Done"
         else:
             print(parser.usage)
     
