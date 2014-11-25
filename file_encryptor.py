@@ -30,7 +30,7 @@ class Encryptor(object):
         
         if self.does_file_exists(filename1) == False: sys.exit("[+] The file does not exists")
         else:
-            self.new_filename = re.findall("\w+\.\w+", new_filename)  #  allow the user to enter only a single word without spaces
+            self.new_filename = re.findall("\w+\.\w+", new_filename)  # a single word without spaces plus file extenstion
             if new_filename:
                 return (filename1, "".join(self.new_filename))
             else:
