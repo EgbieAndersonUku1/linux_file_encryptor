@@ -23,7 +23,7 @@ python file_encryptor.py -m <mode> -s <number of times to shred file> -f <file> 
 
 warning
 ==========
-Make sure that you remember the password for decryption because the original file will be shredded and
+Make sure that you remember the password for decryption because the original file will be shredded
 depending on the number of times you requested. This makes the original file unrecoverable.
 
 
