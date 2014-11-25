@@ -1,4 +1,4 @@
-###################################################################
+###############################################################################
 # The program takes a file and encrypts or decrypts it using an AES algorithm
 # Egbie Anderson
 #
@@ -7,7 +7,7 @@
 # A simple program that encrypts or decrypts a file
 # The program uses openssl and works only if your system is
 # a linux box
-###################################################################
+###############################################################################
 
 # the modules that will be imported into the program
 import optparse
