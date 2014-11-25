@@ -66,7 +66,7 @@ class Encryptor(object):
         '''
         self.filename, self.second_filename = self.verify_input(filename, new_filename)
         system(" %s -in %s -out %s " %(mode, self.filename, self.second_filename))
-        self.delete_file(self.filename, shred_file)
+        self.delete_file(self.filename, shred)
 
     def encrypt(self, mode, filename, new_filename, shred_file):
         """Encrypts a file"""
