@@ -11,7 +11,7 @@ commands
 -s (shred) : The amount of times to shred the file. Note once shred the original file is unrecoverable so
              make sure that you know your password for the decryption.
 -f (file): The file to encrypt or decrypt
--n (new file) : The name for the new file
+-n (new file) : The name for the new file along with the extenstion for the file e.g i.e docx, doc, odt, etc
 
 How to use the commands
 ========================
