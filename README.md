@@ -14,7 +14,7 @@ commands
 -n (new file) : The name for the new file along with the extenstion for the file e.g i.e docx, doc, odt, etc
 
 How to use the commands
-========================
+=========================
 
 Linux
 ========
