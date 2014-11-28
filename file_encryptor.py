@@ -44,38 +44,38 @@ class Encryptor(object):
         """      
         return True if os.path.exists(file_name) else sys.exit("The file does not exist")
         
-    def delete_file(self, file_to_be_deleted, shred):
-        """deletes a file from the hard drive"""
+    def delete_file(self, file_to_be_deleted, num):
+        """secure deletes a file from the hard drive by shredding it n times"""
 
         while True:
             self.answer = raw_input("\n[+] Attemping to delete %s file this will " \
                                   "erase the file permantly continue (y/n) : "%(file_to_be_deleted))
             if self.answer == "y":
                 print("[+] please wait, begin process..\n")
-                print("[+] The file will be over written %d times ..."%(shred))
+                print("[+] The file will be over written %d times ..."%(num))
                 sleep(2)
-                system("shred -u %s -n %d -v" %(file_to_be_deleted, shred))
+                system("shred -u %s -n %d -v" %(file_to_be_deleted, num))
                 print("\n[+] Done %s text file shredded" %(file_to_be_deleted))
                 break
             elif self.answer == "n": sys.exit("\n[+] The file will not be deleted, exiting program !")
             else: 
                 print("The answer must either (y or n) ")
 
-    def _translate(self, mode, filename, new_filename, shred):
-        '''translate(str, str, str, str) -> return(str)
+    def _translate(self, mode, filename, new_filename, num):
+        '''translate(str, str, str, int) -> return(void)
         A wrapper function that gives additonal help to the encrypt and decrypt method
         '''
         self.filename, self.second_filename = self.verify_input(filename, new_filename)
         system(" %s -in %s -out %s " %(mode, self.filename, self.second_filename))
-        self.delete_file(self.filename, shred)
+        self.delete_file(self.filename, num)
 
-    def encrypt(self, mode, filename, new_filename, shred_file):
+    def encrypt(self, mode, filename, new_filename, num):
         """Encrypts a file"""
-        self._translate(mode, filename, new_filename, shred_file)
+        self._translate(mode, filename, new_filename, num)
 
-    def decrypt(self, mode, filename, new_filename, shred_file):
+    def decrypt(self, mode, filename, new_filename, num):
         """Decrypts a file"""
-        self._translate(mode, filename, new_filename, shred_file)
+        self._translate(mode, filename, new_filename, num)
  
 # the main program
 def main():
