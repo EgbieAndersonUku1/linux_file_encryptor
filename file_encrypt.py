@@ -19,7 +19,6 @@
 # FILES, EXCEL DOCUMENTS, TEXT DOCUMENTS, ETC
 #
 # COPYRIGHT 2014
-# THE SCRIPT IS FREE TO BE MODIFIED WITHOUT MY PERMISSION
 ###############################################################################
 
 import optparse
