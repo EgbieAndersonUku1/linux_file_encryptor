@@ -22,7 +22,7 @@ How to use the commands
 Linux
 ========
 
-python file_encryptor.py -m <mode> -s <number of times to shred file> -f <file> -n <new file name>
+python <program name>.py -m <mode> -s <number of times to shred file> -f <file> -n <new file name>
 
 warning
 ==========
