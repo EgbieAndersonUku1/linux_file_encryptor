@@ -14,7 +14,8 @@ commands
            directory as the program
 -n (new file) : The name for the new file along with the extenstion for the file e.g i.e docx, doc, odt, etc.
                 The extenstion for the new file must be the same as the extenstion for the original file. If
-                the original file extenstion was .odt then the new file name must end with the same .odt extenstion
+                the original file extenstion was .odt then the new file name must end with the same .odt extenstion.
+                If it is not matched there is a slight chance that it will not decrypt the original file properly.
 
 How to use the commands
 =========================
