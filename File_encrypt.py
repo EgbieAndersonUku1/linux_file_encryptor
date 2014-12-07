@@ -1,15 +1,15 @@
 ###############################################################################
 #
-# CREATED                           : ON THE 19TH NOVEMBER 2014
-# UPDATED                           : ON 7 DECEMBER 2014 @ 22:00 HRS
+# CREATED                          : ON THE 19TH NOVEMBER 2014
+# UPDATED                          : ON 7 DECEMBER 2014 @ 22:00 HRS
 # CREATED BY                       : EGBIE ANDERSON
-# PROGRAM NAME                : ENCRYPTOR
-# PURPOSE                           : TO ENCRYPT AND DECRYPT FILES
-# ENCRYPTION ALGORITHM   : AES 256
-# OPERATING SYSTEM           : ANY LINUX BASED OPERATING SYSTEM
+# PROGRAM NAME                     : ENCRYPTOR
+# PURPOSE                          : TO ENCRYPT AND DECRYPT FILES
+# ENCRYPTION ALGORITHM             : AES 256
+# OPERATING SYSTEM                 : ANY LINUX BASED OPERATING SYSTEM
 #
 # PROGRAM DESCRIPTION
-# ===============
+# ===================
 #
 # A SIMPLE SCRIPT THAT ENCRYPTS OR DECRYPTS
 # A FILE. THE PROGRAM USES OPENSSL WITH AN AES ALGORITHM TO
